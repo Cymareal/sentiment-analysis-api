@@ -4,7 +4,6 @@ from src.preprocess import clean_text
 
 app = Flask(__name__)
 
-# Load model and vectorizer
 model = joblib.load('model/sentiment_model.pkl')
 vectorizer = joblib.load('model/vectorizer.pkl')
 
